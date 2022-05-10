@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial;
+}
+body{
+    background: #e7ecf4;
+}
+.clear{
+    clear: both;
+}
+
+/* Header */
+#header{
+    background: #222222;
+    padding: 10px 0;
+    position: relative;
+}
+#search-box{
+    margin-top: 5px;
+}
+#search-box input{
+    width: 280px;
+    height: 30px;
+    border-radius: 3px 0 0 3px;
+    border: none;
+}
+#btn-search{
+    width: 80px;
+    height: 30px;
+    background: #eb1f27;
+    color: white;
+    border-radius: 0 3px 3px 0;
+}
+#cart-notify{
+    text-align: right;   
+    margin-top: 5px;
+}
+#cart-notify a, #menu li a{
+    text-decoration: none;
+    color: white;
+}
+#cart-notify span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #eb1f27;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+#btn-menu{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+/* End Header */
+
+/* Main */
+#menu{
+    background: #eb1f27;
+    overflow: auto;
+}
+#menu li{
+    list-style: none;
+    float: left;
+    padding: 15px 13px;
+    border-right: solid 1px #c60a11;
+}
+#menu li:hover{
+    background: #c60a11;
+}
+
+#product-featured h4, #product-new h4{
+    font-size: 18px;
+    margin: 15px 0;
+    color: #333;
+}
+.card{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    margin: 5px !important;
+    border-radius: 4px;
+    border: 1px solid #999999;
+}
+.card:first-child{
+    margin-left: 15px !important;
+}
+.card:last-child{
+    margin-right: 15px !important;
+}
+.card img{
+    width: 125px;
+    height: 160px;
+}
+.card:hover img{
+    opacity: 0.5;
+}
+.card a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.card-text span{
+    color: red;
+    font-weight: bold;
+}
+#sidebar img{
+    margin-bottom: 10px;
+}
+/* End Main */
+
+/* Footer */
+#footer-top{
+    background: #ffffff;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+#footer-top p{
+    text-align: justify;
+    margin-top: 15px;
+}
+#footer-top h4{
+    font-size: 18px;
+}
+#footer-bottom{
+    background: #333333;
+    color: white;
+    padding-top: 15px;
+}
+/* End Footer */
+
+/* Media */
+@media(max-width: 992px){
+    #sidebar{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    
+    #cart-notify{
+        text-align: left;
+    }
+    #menu li{
+        float: none;
+        border-bottom: 1px solid #eb1f27;
+        
+    }
+    #carouselExampleSlidesOnly{
+        display: none;
+    }
+    .card:first-child{
+        margin-left: 0 !important;
+    }
+    .card:last-child{
+        margin-right: 0 !important;
+    }
+    .card{
+        margin: 5px 0 !important;
+    }
+}
+@media(min-width: 768px){
+    #menu{
+        display: block;
+    }
+    #btn-menu{
+        display: none;
+    }
+}
